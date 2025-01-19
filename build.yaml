@@ -20,6 +20,4 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: helix_left
-  - board: nice_nano_v2
-    shield: helix_right
+    shield: pinky4_left

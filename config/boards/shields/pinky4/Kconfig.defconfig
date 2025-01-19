@@ -1,0 +1,8 @@
+# Copyright (c) 2020 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+if SHIELD_PINKY4
+
+config ZMK_KEYBOARD_NAME
+    default "Pinky4"
+endif

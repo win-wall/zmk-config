@@ -1,0 +1,11 @@
+file_format: "1"
+id: picky4
+name: picky4
+type: shield
+url: https://github.com/MakotoKurauchi/helix
+requires: [nice_nano_v2]
+exposes: [i2c_oled]
+features:
+  - keys
+siblings:
+  - picky4_left
