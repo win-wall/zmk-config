@@ -19,9 +19,9 @@ As such, those are in use within the default layer at this time.*/
             // |     A     |     B     |     C     |
             // |     D     |     E     |     F     |
             bindings = <
-                &kp 7    &kp 8    &kp 9
-                &kp 4    &kp 5    &kp 6
-                &kp 1    &kp 2    &kp 3
+                &kp Z    &kp M    &kp K
+                &kp A    &kp B    &kp C
+                &kp D    &kp E    &kp F
             >;
         };
     };
