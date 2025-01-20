@@ -1,22 +1,29 @@
 # Copyright (c) 2020 The ZMK Contributors
 # SPDX-License-Identifier: MIT
-
 if SHIELD_PINKY4
 
 config ZMK_KEYBOARD_NAME
     default "Pinky4"
+
 endif
+
 if SHIELD_PINKY4
-if ZMK_DISPLAY
-config SSD1306
+
+config ZMK_SPLIT
     default y
+
+if ZMK_DISPLAY
+
 config I2C
     default y
 
 config SSD1306
     default y
-endif
 
+config SSD1306_REVERSE_MODE
+    default y
+
+endif # ZMK_DISPLAY
 
 if LVGL
 
