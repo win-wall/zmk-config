@@ -7,5 +7,6 @@ requires: [nice_nano_v2]
 exposes: [i2c_oled]
 features:
   - keys
+  - display
 siblings:
   - picky4_left

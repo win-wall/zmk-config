@@ -6,3 +6,12 @@ if SHIELD_PINKY4
 config ZMK_KEYBOARD_NAME
     default "Pinky4"
 endif
+if SHIELD_PINKY4
+config SSD1306
+    default y
+config I2C
+    default y
+
+config SSD1306
+    default y
+endif
