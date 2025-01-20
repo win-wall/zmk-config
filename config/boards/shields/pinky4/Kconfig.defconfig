@@ -9,9 +9,6 @@ endif
 
 if SHIELD_PINKY4
 
-config ZMK_SPLIT
-    default y
-
 if ZMK_DISPLAY
 
 config I2C
@@ -21,6 +18,9 @@ config SSD1306
     default y
 
 config SSD1306_REVERSE_MODE
+    default y
+
+config CONFIG_ZMK_DISPLAY
     default y
 
 endif # ZMK_DISPLAY
