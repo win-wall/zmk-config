@@ -7,6 +7,7 @@ config ZMK_KEYBOARD_NAME
     default "Pinky4"
 endif
 if SHIELD_PINKY4
+if ZMK_DISPLAY
 config SSD1306
     default y
 config I2C
@@ -14,4 +15,18 @@ config I2C
 
 config SSD1306
     default y
+endif
+
+
+if LVGL
+config LV_Z_VDB_SIZE
+    default 64
+config LV_Z_DPI
+    default 148
+config LV_Z_BITS_PER_PIXEL
+    default 1
+choice LV_COLOR_DEPTH
+    default LV_COLOR_DEPTH_1
+endchoice
+endif # LVGL
 endif
