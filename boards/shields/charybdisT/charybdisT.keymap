@@ -41,38 +41,6 @@
 };
 
 / {
-    macros {
-        henkan: henkan {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <40>;
-            tap-ms = <40>;
-            bindings
-                = <&macro_press   &kp LALT>
-                , <&macro_tap     &kp GRAVE>
-                , <&macro_release &kp LALT>
-                ;
-        };
-    };
-        combos {
-            compatible = "zmk,combos";
-            timeout-ms = <100>;
-            require-prior-idle-ms = <150>;
-
-            combo_reset_left {
-                key-positions = <14 15 16 25>;
-                bindings = <&bootloader>;
-            };
-
-            combo_reset_right {
-                key-positions = <19 20 21 34>;
-                bindings = <&bootloader>;
-            };
-
-        };
-};
-
-/ {
         keymap {
                 compatible = "zmk,keymap";
 
